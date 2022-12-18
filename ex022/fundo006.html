@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: repeat-y; /*(no-repeat) para a imagem não se repetir no fundo da tela*/
-            background-size: cover; /*ocupa 100% da tela, apesar de não exibir a imagem 100%. Ele faz uma adaptação cortando partes da imagem conforme a tela é ajustada. Mais indicado.*/
+            
+            /*background-color: black;*/
+            /*background-image: url('imagens/wallpaper002.jpg');*/
+            /*background-position: center top;*/
+            /*background-repeat: no-repeat;*/ /*(no-repeat) para a imagem não se repetir no fundo da tela*/
+            /*background-size: cover;*/ /*ocupa 100% da tela, apesar de não exibir a imagem 100%. Ele faz uma adaptação cortando partes da imagem conforme a tela é ajustada. Mais indicado.*/
+            /*background-attachment: fixed;*/ /*A imagem de fundo fica fixa*/
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px; /*margem interna*/
             margin: auto; /*centraliza o main*/
             border: 1px solid darkblue;
