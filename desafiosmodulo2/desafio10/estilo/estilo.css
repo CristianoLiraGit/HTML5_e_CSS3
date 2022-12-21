@@ -93,7 +93,7 @@ main {
     padding: 20px;   
     min-width: 300px;
     max-width: 1000px;
-    margin: auto;
+    margin: auto; /*Em telas muito grandes, faz com que o main não cresça acima dos 1000px definidos acima*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
     border-bottom-left-radius: 10px; /*bordas de baixo (esquerda)*/
     border-top-right-radius: 10px; /*bordas de baixo (direita)*/
@@ -108,7 +108,7 @@ main p {
 }
 
 main img {
-    width: 100%;
+    width: 100%; /*Largura independente do conteúdo. Faz com que a imagem se esprema, adaptando-se*/
 }
 
 main h1 { /* Todo h1 que estiver dentro do main*/
@@ -127,7 +127,7 @@ main h2 {
 
 main img.pequena {
     max-width: 350px;
-    display: block;
+    display: block; /*A imagem, por padrão, não é um bloco. Por isso tem que colocar este comando para que a imagem seja centralizada.*/
     margin: auto;
 }
 
