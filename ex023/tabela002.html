@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*comando para tornar o cabeçalho da tabela fixo*/
         }
 
         td, th {
@@ -32,6 +33,16 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; /*comandos para tornar fixo o cabeçalho da tabela sticky → colar*/
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) { /*Efeito zebrado. Entre parênteses(odd, 2n-1, even, 2n)*/
+            background-color: lightgray;
         }
 
         td.num {
@@ -176,5 +187,15 @@
             </tr>
         </tfoot>
     </table>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas illo iure et incidunt! Id molestias magnam praesentium voluptatem deleniti, dolorum dolore eius quidem nam odio labore dolor, commodi nemo nihil, delectus quo est doloribus ex. Et harum dolorum incidunt temporibus eos sed hic, dicta animi numquam voluptate facilis corrupti pariatur, magni placeat error asperiores tenetur ab eveniet. Labore commodi sapiente maiores aliquid id dignissimos? Repellendus eligendi deserunt mollitia, porro illo maiores vel sit, repudiandae non explicabo assumenda, quia cumque.</p> 
+    
+    <p>Corrupti veritatis sit iure. Iure, doloremque ut, nihil asperiores fugiat soluta deleniti nam corporis animi eos sint tenetur expedita modi reprehenderit iste. Odit, deserunt optio odio, culpa rerum id corporis ipsum dolorem fugit praesentium ut fugiat? Error, excepturi facere suscipit aut ipsum molestias exercitationem expedita perferendis laudantium quidem commodi magnam debitis alias accusantium enim? Neque ex iusto modi magnam facere accusantium pariatur aspernatur ratione necessitatibus.
+    </p> 
+    <p>Eius corrupti recusandae aperiam ipsam porro dolores reiciendis non culpa repellat nisi, assumenda debitis numquam adipisci unde laboriosam. Porro nobis minus dolores, reiciendis, aut laudantium temporibus distinctio voluptatem omnis numquam, inventore eius totam soluta ab? Eaque molestiae suscipit assumenda animi iste similique distinctio quam officia commodi et eligendi soluta ea at adipisci deserunt nulla voluptate laborum sapiente, perferendis atque libero quae id! Temporibus sint nemo eligendi iste exercitationem porro tenetur, quisquam fugiat explicabo distinctio rem, possimus quas? Facere, sunt atque? Voluptates voluptatem accusamus, nesciunt temporibus veritatis alias nemo doloribus maxime reiciendis rerum vitae fugit nam id ab iste quasi laboriosam quos accusantium eos laudantium. Quidem officiis nam distinctio accusamus, veniam laudantium sit? Eum voluptatibus reprehenderit dignissimos dolor, magnam ab? Sapiente illo sequi inventore, rem quos corporis labore excepturi unde quo dolorum illum numquam et, molestias nihil amet dolore quia aliquam repudiandae.</p> 
+    
+    <p>Provident commodi dolorem possimus eligendi unde ipsum et odit dicta voluptate vitae fugit doloribus quia quos obcaecati voluptatibus temporibus praesentium velit, illo tempore incidunt nisi in aliquid minima. Unde placeat possimus quam iure? Ipsam tenetur commodi perferendis nemo. Iusto ullam labore error libero dolorem suscipit, modi tenetur officiis quidem doloremque blanditiis voluptas laborum dolore quasi, mollitia consectetur maiores assumenda dolorum eveniet reiciendis. Reiciendis voluptates eveniet minima, ad eos deleniti dolor sapiente mollitia, sint enim iure nihil? Amet sint quia sequi, cupiditate asperiores, nam tempora fuga exercitationem earum ea sapiente necessitatibus quam iusto dolore aspernatur ab reiciendis nihil sit excepturi qui debitis facilis alias obcaecati.</p> 
+    
+    <p>Eum vitae quas perferendis rem iure accusamus culpa enim, blanditiis dolorum! Magni aut hic culpa molestiae eligendi libero minus, aliquid in adipisci perspiciatis voluptas suscipit earum consequuntur minima delectus possimus quisquam placeat? Temporibus numquam nihil non animi doloremque, dolor maxime, quae atque voluptatum repellat facilis alias aliquid a! Quasi cum officia facilis ex doloribus suscipit. Repellendus quam dolorem obcaecati. Illum eligendi praesentium alias reiciendis sunt ipsam doloribus dolore quod delectus, deleniti iste, recusandae aliquid libero vel ut ducimus provident consequatur ipsa, aliquam corrupti minima ad? Animi nam repellendus quae dolore, id quas molestiae quaerat, et, dolores officiis fuga. Voluptatum recusandae natus voluptatem nulla laboriosam accusamus consequatur corrupti perferendis, saepe deleniti.</p>
 </body>
 </html>
