@@ -21,6 +21,14 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+            border: 1px solid black;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -36,6 +44,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD → cabeça da tabela
                 TR, TD, TH (TH é dado de cabeçalho)
             TBODY → corpo da tabela
@@ -43,10 +52,11 @@
             TFOOT → footer da tabela
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>
+                <th scope="col">Unidade Federativa</th> <!--Os dados de Unidade Federativa estão abaixo, em uma coluna. Tenho que dizer isto ao HTML-->
+                <th scope="col" style="width: 50px;">População</th> <!--Da mesma forma aqui. Onde estão os dados de população, na mesma linha ou na mesma coluna? Na mesma coluna. -->
             </tr>
         </thead>
         <tbody>
@@ -161,7 +171,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!-- Os dados de Total de Habitantes estão na mesma linha. -->
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
